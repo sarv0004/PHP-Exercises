@@ -37,12 +37,13 @@ for example:
 3 % 2 = 1 -> odd number
 4 % 2 = 0 -> even number
 */
-$n = 0;
-for ($n=1; $n<=20; $n++){
-	if($n%2 === 0)
-		echo $n." % 2 = ". ($n%2) . " -> even number <br>";
+
+for ($n = 0; $n < sizeof($numbers); $n++){
+
+	if($numbers[$n]%2 != 0)
+		echo $numbers[$n]." % 2 = ". ($numbers[$n]%2) . " -> odd number<br>";
 	else
-		echo $n." % 2 = ". ($n%2) . " -> odd number<br>";
+			 $numbers[$n]." % 2 = ". ($numbers[$n]%2) . " -> even number <br>";
     
 } 
 
